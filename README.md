@@ -8,7 +8,7 @@ This document is a work in progress, an initial draft, and not ready for public 
 
 Ideas for further sections:
 * Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
-* CSS font-weight & font-style
+* CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 
 ## Table of contents
 
