@@ -4,6 +4,9 @@ Luckily it is really easy to use custom fonts in websites nowadays. The basics a
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
 
+Ideas for further sections:
+* Rendering on different browsers & CSS anti-aliasing.
+
 ## Table of contents
 
 * [Web font formats](#web-font-formats)
