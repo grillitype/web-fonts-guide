@@ -1,10 +1,10 @@
 # Using (Grilli Type) web fonts
 
+**This document is a work in progress, an initial draft, and not ready for public consumption. If you’re here it’s because I sent you a link for feedback. Please do not share this further. Thank you!**
+
 Luckily it is really easy to use custom fonts in websites nowadays. The basics are easy to master, and this document hopes to help with that. 
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
-
-This document is a work in progress, an initial draft, and not ready for public consumption. If you’re here it’s because I sent you a link for feedback. Please do not share this further. Thank you!
 
 Ideas for further sections:
 * Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
