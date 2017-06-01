@@ -9,6 +9,7 @@ It also links to further, more in-depth sources that are helpful for more advanc
 Ideas for further sections:
 * Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
+* Add note to font-feature-settings about child elements requiring the full definition again.
 
 ## Table of contents
 
