@@ -7,7 +7,7 @@ It also links to further, more in-depth sources that are helpful for more advanc
 This document is a work in progress, an initial draft, and not ready for public consumption. If you’re here it’s because I sent you a link for feedback. Please do not share this further. Thank you!
 
 Ideas for further sections:
-* Rendering in different browsers / devices & CSS anti-aliasing.
+* Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * CSS font-weight & font-style
 
 ## Table of contents
