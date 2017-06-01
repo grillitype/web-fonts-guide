@@ -8,6 +8,7 @@ This document is a work in progress, an initial draft, and not ready for public 
 
 Ideas for further sections:
 * Rendering in different browsers / devices & CSS anti-aliasing.
+* CSS font-weight & font-style
 
 ## Table of contents
 
