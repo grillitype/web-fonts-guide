@@ -131,7 +131,7 @@ You can use font-feature-settings to activate stylistic alternates, discretionar
 
 A great resource to test out OpenType features and easily put together your required CSS code is [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter. 
 
-### Letter-Spacing, Word-Spacing
+### Letter-Spacing and Word-Spacing
 
 CSS has long supported the letter-spacing and word-spacing attributes. When used correctly, this allows relatively fine control over two very important aspects of how your type will look.
 
