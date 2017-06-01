@@ -4,7 +4,22 @@ Luckily it is really easy to use custom fonts in websites nowadays. The basics a
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
 
-[INDEX OF ALL CHAPTERS WITH ANCHOR LINKS]
+## Table of contents
+
+* [Web font formats](#web-font-formats)
+* [How to embed web fonts in HTML/CSS](#how-to-embed-web-fonts-in-csshtml)
+	* [CSS for all formats](#css-for-all-formats)  
+	* [CSS for modern formats](#css-for-modern-formats)  
+	* [HTML embed code](#html-embed-code)
+* [Advanced Typographic Features](#advanced-typographic-features)
+	* [Spacing and kerning](#spacing-and-kerning)
+	* [Advanced OpenType features](#advanced-opentype-features)
+  * [Letter-spacing and word-spacing](#letter-spacing-and-word-spacing)
+* [Even more](#even-more)
+	* [Uploading our font files to Github](#uploading-our-font-files-to-github)
+	* [Loading web fonts](#loading-web-fonts)
+	* [CSS Text Decoration](#css-text-decoration)
+* [Comments? Additions? Feedback?](#comments-additions-feedback)
 
 
 ## Web font formats:
@@ -23,7 +38,7 @@ If you want to expand your support the widest, add EOT and TTF files to the mix.
 
 We do not offer SVG font files anymore, as the user-base for them is extremely small at this point. Google’s Chrome even removed support for the format completely.
 
-[External Link: Browser Version Support for different setups](https://css-tricks.com/snippets/css/using-font-face/)
+[Good list of different browser version’s support for various web font format setups](https://css-tricks.com/snippets/css/using-font-face/)
 
 
 ## How to embed web fonts in CSS/HTML:
@@ -57,13 +72,13 @@ html-element {
 ~~~~
 
 [ADD LINK TO WORDPRESS PLUGIN]
-[ADD LINK TO SQUARESPACE GUIDE FOR WEBFONTS]
-[COMMON TROUBLESHOOT STEPS: Is path correct? Do the webfonts load in other browser? Is font name chosen under 28 characters for IE11< support?]
+[ADD LINK TO SQUARESPACE GUIDE FOR WEB FONTS]
+[COMMON TROUBLESHOOT STEPS: Is path correct? Do the web fonts load in other browser? Is font name chosen under 28 characters for IE11< support?]
 
 
 ## Advanced typographic features
 
-### Spacing, Kerning
+### Spacing and Kerning
 
 Two settings inside font files define the space between characters: Spacing is defined as side bearings on the left and right side of each letter, while kerning means specific adjustments between two characters.
 
@@ -133,7 +148,7 @@ This will give the uppercase letters in this theoretical image caption a little 
 [Image of standard and adjusted setup]
 
 
-## Advanced
+## Even more
 
 For more advanced developers, there’s even more to think about when using web fonts. 
 
@@ -158,4 +173,4 @@ The W3C is working on [a draft for new controls of text decoration](https://draf
 
 ## Comments? Additions? Feedback?
 
-You can always [email us](mailto:mail@grillitype.com) with feedback to this document. You can also write us directly on [Github](http://linktogithubrepo.com) with change requests or comments.
+You can always [email us](mailto:mail@grillitype.com) with feedback to this document. You can also write us directly on [Github](https://github.com/grillitype/web-fonts-guide) by adding an issue.
