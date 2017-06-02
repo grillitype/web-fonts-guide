@@ -10,6 +10,7 @@ Planned for future addition to this document:
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * Add note to font-feature-settings about child elements requiring the full definition again.
 * Why not to use text-rendering: optimizeLegibility;
+* -webkit-font-smoothing: subpixel-antialiased
 * Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Add resources like copypastecharacter.com
 * Hyphenation?
