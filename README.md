@@ -9,11 +9,12 @@ It also links to further, more in-depth sources that are helpful for more advanc
 Planned for future addition to this document:
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * Add note to font-feature-settings about child elements requiring the full definition again.
+* Why not to use text-rendering: optimizeLegibility;
 * Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Add resources like copypastecharacter.com
-* Hyphenation
-* Font-sizing? Might go too far
-* Why not to use text-rendering: optimizeLegibility;
+* Hyphenation?
+* Hinting?
+* Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
 
 
 ## Table of contents
@@ -79,13 +80,9 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
 ### HTML Embed Code
 ~~~~html
 html-element {
-  font-family: 'FontName', SystemFallbackFont, sans-serif;
+  font-family: 'FontName', Helvetica, Arial, sans-serif;
 }
 ~~~~
-
-[ADD LINK TO WORDPRESS PLUGIN]
-[ADD LINK TO SQUARESPACE GUIDE FOR WEB FONTS]
-[COMMON TROUBLESHOOT STEPS: Is path correct? Do the web fonts load in other browser? Is font name chosen under 28 characters for IE11< support?]
 
 
 ## Advanced typographic features
@@ -130,7 +127,7 @@ The following code would turn on old-style numerals (onum) that are proportional
 font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 ~~~~
 
-[Image showing text with GT America or GT Sectra with these features turned on and off]
+[Image showing text with these features turned on and off]
 
 You can use font-feature-settings to activate stylistic alternates, discretionary ligatures, different types of figures available in a font, turn on small caps, and other handy things.
 
