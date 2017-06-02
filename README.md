@@ -93,7 +93,7 @@ Two settings inside font files define the space between characters: Spacing is d
 
 Spacing cannot be turned off and is always turned on, because otherwise the text rendering engine (your browser) wouldn’t know what to do with these letters. Kerning, on the other hand, is turned off by default and has to be turned on by you in your CSS.
 
-[Image with kerning turned off and on]
+![Image to explain kerning](assets/kerning-explainer.gif)
 
 It’s very easy! Here’s how you can activate it across all browsers that support it:
 
