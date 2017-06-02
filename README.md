@@ -144,15 +144,13 @@ Generally, most typefaces benefit of a little extra letter-spacing and word-spac
 It’s best to use both attributes with _em_ units, as that will automatically be based on the element’s font-size. For use at small sizes, you could for example do the following:
 
 ~~~~css
-image-captions {
-	font-size: 12px;
-	text-transform: uppercase;
+p {
 	letter-spacing: 0.015em;
-	word-spacing: 0.008em;
+	word-spacing: 0.001em;
 }
 ~~~~
 
-This will give the uppercase letters in this theoretical image caption a little more room to breathe. Have a look at how these look in GT America Standard Regular:
+This will give your bodycopy a little more room to breathe. 
 
 ![Image to explain letter-spacing and word-spacing](assets/letterspacing-explainer.gif)
 
