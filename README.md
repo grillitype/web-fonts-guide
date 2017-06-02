@@ -154,7 +154,7 @@ image-captions {
 
 This will give the uppercase letters in this theoretical image caption a little more room to breathe. Have a look at how these look in GT America Standard Regular:
 
-[Image of standard and adjusted setup]
+![Image to explain letter-spacing and word-spacing](assets/letterspacing-explainer.gif)
 
 
 ## Even more
