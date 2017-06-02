@@ -127,7 +127,7 @@ The following code would turn on old-style numerals (onum) that are proportional
 font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 ~~~~
 
-[Image showing text with these features turned on and off]
+![Image to explain features](assets/features-explainer.gif)
 
 You can use font-feature-settings to activate stylistic alternates, discretionary ligatures, different types of figures available in a font, turn on small caps, and other handy things.
 
