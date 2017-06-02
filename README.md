@@ -15,6 +15,7 @@ Planned for future addition to this document:
 * Hyphenation?
 * Hinting?
 * Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
+* Add a note about base64 encoding in the advanced section (re: caching)
 
 
 ## Table of contents
