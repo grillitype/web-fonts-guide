@@ -6,10 +6,14 @@ Luckily it is really easy to use custom fonts in websites nowadays. The basics a
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
 
-Ideas for further sections:
-* Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
+Planned for future addition to this document:
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * Add note to font-feature-settings about child elements requiring the full definition again.
+* Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
+* Add resources like copypastecharacter.com
+* Hyphenation
+* Font-sizing? Might go too far
+
 
 ## Table of contents
 
@@ -51,7 +55,7 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
 ## How to embed web fonts in CSS/HTML:
 
 ### CSS for ALL FORMATS:
-~~~~
+~~~~css
 @font-face {
   font-family: FontName;
   src: url('path/filename.eot');
@@ -63,7 +67,7 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
 ~~~~
 
 ### CSS for MODERN FORMATS:
-~~~~
+~~~~css
 @font-face {
   font-family: FontName;
   src:	url('path/filename.woff2') format('woff2'), 
@@ -72,7 +76,7 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
 ~~~~
 
 ### HTML Embed Code
-~~~~
+~~~~html
 html-element {
   font-family: 'FontName', SystemFallbackFont, sans-serif;
 }
@@ -95,16 +99,16 @@ Spacing cannot be turned off and is always turned on, because otherwise the text
 
 It’s very easy! Here’s how you can activate it across all browsers that support it:
 
-~~~~
+~~~~css
 p {
 font-feature-settings:"kern" 1;
 font-kerning: normal;
 }
 ~~~~
 
-If you don’t use a CSS Preprocessor tool that helps you with this, you should also use each browser’s so-called vendor prefix for this setting, so that early versions of browsers that supported the feature are also targeted:
+If you don’t use a CSS post-processing tool that helps you with this, you should also use each browser’s so-called vendor prefix for this setting, so that early versions of browsers that supported the feature are also targeted:
 
-~~~~
+~~~~css
 p {
 -moz-font-feature-settings:"kern" 1; 
 -ms-font-feature-settings:"kern" 1; 
@@ -121,7 +125,7 @@ In the previous paragraphs we’ve looked at the font-feature-settings attribute
 
 The following code would turn on old-style numerals (onum) that are proportional numerals (pnum), turn on kerning, and also activate Stylistic Set 1 (ss01):
 
-~~~~
+~~~~css
 font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 ~~~~
 
@@ -141,7 +145,7 @@ Generally, most typefaces benefit of a little extra letter-spacing and word-spac
 
 It’s best to use both attributes with _em_ units, as that will automatically be based on the element’s font-size. For use at small sizes, you could for example do the following:
 
-~~~~
+~~~~css
 image-captions {
 	font-size: 12px;
 	text-transform: uppercase;
