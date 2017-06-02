@@ -13,6 +13,7 @@ Planned for future addition to this document:
 * Add resources like copypastecharacter.com
 * Hyphenation
 * Font-sizing? Might go too far
+* Why not to use text-rendering: optimizeLegibility;
 
 
 ## Table of contents
