@@ -6,17 +6,16 @@ Luckily it is really easy to use custom fonts in websites nowadays. The basics a
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
 
-Planned for future addition to this document:
+## Still to be added
+
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
-* Add note to font-feature-settings about child elements requiring the full definition again.
-* Why not to use text-rendering: optimizeLegibility;
-* -webkit-font-smoothing: subpixel-antialiased
-* Rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
-* Add resources like copypastecharacter.com
-* Hyphenation?
-* Hinting?
+* Font-feature-settings: add note re: child elements requiring the full definition
+* When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
+* Also: Basic info on hinting
+* Base64 encoding in the advanced section (problems w/ caching)
+* Add resources like copypastecharacter.com. What other resources?
 * Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
-* Add a note about base64 encoding in the advanced section (re: caching)
+* Hyphenation? Maybe too far
 
 
 ## Table of contents
