@@ -10,8 +10,7 @@ It also links to further, more in-depth sources that are helpful for more advanc
 
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
-* Also: Basic info on hinting
-* Add resources like copypastecharacter.com. What other resources?
+* Basic info on hinting
 * Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
 * Hyphenation? Maybe too far
 
@@ -27,6 +26,7 @@ It also links to further, more in-depth sources that are helpful for more advanc
 	* [Spacing and kerning](#spacing-and-kerning)
 	* [Advanced OpenType features](#advanced-opentype-features)
   * [Letter-spacing and word-spacing](#letter-spacing-and-word-spacing)
+* [Resources](#resources)
 * [Even more](#even-more)
 	* [Uploading our font files to Github](#uploading-our-font-files-to-github)
 	* [Loading web fonts](#loading-web-fonts)
@@ -132,7 +132,6 @@ You can use font-feature-settings to activate stylistic alternates, discretionar
 
 Warning: Because font-feature-settings is used to set many potential OpenType features at once, you can’t just define a single setting differently as your other choices will not be inherited. You need to redefine all of them if you want to change anything for child elements.
 
-A great resource to test out OpenType features and easily put together your required CSS code is [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter. 
 
 ### Letter-Spacing and Word-Spacing
 
@@ -155,6 +154,11 @@ This will give your bodycopy a little more room to breathe.
 
 ![Image to explain letter-spacing and word-spacing](assets/letterspacing-explainer.gif)
 
+
+## Resources
+
+* [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter is great place to test out OpenType features and easily put together your required CSS code.
+* [Copy Paste Character](http://copypastecharacter.com) is a great website that allows you to access pretty much any special character you might ever use.
 
 ## Even more
 
