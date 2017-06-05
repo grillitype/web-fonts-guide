@@ -194,4 +194,4 @@ The W3C is working on [a draft for new controls of text decoration](https://draf
 
 ## Comments? Additions? Feedback?
 
-You can always [email us](mailto:mail@grillitype.com) with feedback to this document. You can also write us directly on [Github](https://github.com/grillitype/web-fonts-guide) by adding an issue.
+You can always [email us](mailto:mail@grillitype.com?subject=Web%20Fonts%Guide) with feedback to this document. You can also write us directly on [Github](https://github.com/grillitype/web-fonts-guide) by adding an issue.
