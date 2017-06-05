@@ -11,7 +11,6 @@ It also links to further, more in-depth sources that are helpful for more advanc
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Also: Basic info on hinting
-* Base64 encoding in the advanced section (problems w/ caching)
 * Add resources like copypastecharacter.com. What other resources?
 * Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
 * Hyphenation? Maybe too far
@@ -174,6 +173,10 @@ path/to/web/fonts/folder/*
 ### Loading Web Fonts
 
 Loading web fonts is easy. But it can also be very hard. If you’d like to learn more about FOUT (Flash Of Unstyled Text) and other phenomena, Zach Leat’s [A Comprehensive Guide to Font Loading Strategies](https://www.zachleat.com/web/comprehensive-webfonts/) will make you very happy.
+
+### Base64-encoded font files
+
+In some rare instances, encoding your fonts as base64 inside your CSS will be a good idea. Generally it is not a good idea – and you will most of the time break your font’s licensing agreement. Proceed with a lot of caution.
 
 ### CSS Text Decoration
 
