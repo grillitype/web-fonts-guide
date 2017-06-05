@@ -106,7 +106,7 @@ font-kerning: normal;
 }
 ~~~~
 
-If you don’t use a CSS post-processing tool that helps you with this, you should also use each browser’s so-called vendor prefix for this setting, so that early versions of browsers that supported the feature are also targeted:
+If you don’t use something like SASS or PostCSS that helps you with this, you should manually add each browser’s vendor prefix for this setting to extend browser support:
 
 ~~~~css
 p {
