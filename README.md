@@ -9,7 +9,6 @@ It also links to further, more in-depth sources that are helpful for more advanc
 ## Still to be added
 
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
-* Font-feature-settings: add note re: child elements requiring the full definition
 * When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Also: Basic info on hinting
 * Base64 encoding in the advanced section (problems w/ caching)
@@ -131,6 +130,8 @@ font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 ![Image to explain features](assets/features-explainer.gif)
 
 You can use font-feature-settings to activate stylistic alternates, discretionary ligatures, different types of figures available in a font, turn on small caps, and other handy things.
+
+Warning: Because font-feature-settings is used to set many potential OpenType features at once, you can’t just define a single setting differently as your other choices will not be inherited. You need to redefine all of them if you want to change anything for child elements.
 
 A great resource to test out OpenType features and easily put together your required CSS code is [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter. 
 
