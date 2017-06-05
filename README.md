@@ -11,7 +11,6 @@ It also links to further, more in-depth sources that are helpful for more advanc
 * CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
 * When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Basic info on hinting
-* Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
 
 
 ## Table of contents
