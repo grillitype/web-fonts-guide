@@ -12,7 +12,6 @@ It also links to further, more in-depth sources that are helpful for more advanc
 * When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
 * Basic info on hinting
 * Common troubleshooting steps: checking path (console), do web fonts load in all browsers, is font-family name under 28 chars to ensure <IE11 support?
-* Hyphenation? Maybe too far
 
 
 ## Table of contents
@@ -22,6 +21,7 @@ It also links to further, more in-depth sources that are helpful for more advanc
 	* [CSS for all formats](#css-for-all-formats)  
 	* [CSS for modern formats](#css-for-modern-formats)  
 	* [HTML embed code](#html-embed-code)
+	* [Hosting your fonts](#hosting-your-fonts)
 * [Advanced Typographic Features](#advanced-typographic-features)
 	* [Spacing and kerning](#spacing-and-kerning)
 	* [Advanced OpenType features](#advanced-opentype-features)
@@ -82,6 +82,12 @@ html-element {
   font-family: 'FontName', Helvetica, Arial, sans-serif;
 }
 ~~~~
+
+### Hosting your fonts
+
+At Grilli Type we offer our web fonts for self-hosting. That means that you host them on your own server, and your fonts will always be online when a visitor comes to your website. No tracking code or javascript in general required to simply load font files.
+
+A lot of small foundries offer fonts this way, and we are convinced it is the best way. Other type foundries offer their fonts in other ways. Some offer self-hosting with (not very cumbersome) restrictions, others only offer hosted solutions. Make sure you know how a type foundry’s web fonts are offered before you buy licensing.
 
 
 ## Advanced typographic features
