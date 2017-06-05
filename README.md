@@ -50,8 +50,6 @@ If you want to expand your support the widest, add EOT and TTF files to the mix.
 
 We do not offer SVG font files anymore, as the user-base for them is extremely small at this point. Google’s Chrome even removed support for the format completely.
 
-[Good list of different browser version’s support for various web font format setups](https://css-tricks.com/snippets/css/using-font-face/)
-
 
 ## How to embed web fonts in CSS/HTML:
 
@@ -165,6 +163,7 @@ This will give your bodycopy a little more room to breathe.
 
 * [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter is great place to test out OpenType features and easily put together your required CSS code.
 * [Copy Paste Character](http://copypastecharacter.com) is a great website that allows you to access pretty much any special character you might ever use.
+* [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/) has a good list of different browser version’s support for various web font format setups.
 
 ## Even more
 
