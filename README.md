@@ -144,7 +144,7 @@ As with all things typography, you’ll need to learn to evaluate different opti
 
 Generally, most typefaces benefit of a little extra letter-spacing and word-spacing when used at small sizes. When used at very large sizes, many typefaces benefit from more narrow letter-spacing and word-spacing, but require a lot of attention to make sure things work out okay.
 
-It’s best to use both attributes with _em_ units, as that will automatically be based on the element’s font-size. For use at small sizes, you could for example do the following:
+It’s best to use both attributes with _em_ units, as that will automatically be based on the element’s font-size. For use at small sizes, you could for example do the following. This will give your bodycopy a little more room to breathe.
 
 ~~~~css
 p {
@@ -152,8 +152,6 @@ p {
 	word-spacing: 0.001em;
 }
 ~~~~
-
-This will give your bodycopy a little more room to breathe. 
 
 ![Image to explain letter-spacing and word-spacing](assets/letterspacing-explainer.gif)
 
