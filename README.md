@@ -20,13 +20,13 @@ It also links to further, more in-depth sources that are helpful for more advanc
   * [Letter-spacing and word-spacing](#letter-spacing-and-word-spacing)
 * [Font rendering](#font-rendering)
 	* [Hinting](#hinting)
-	* [Font Smoothing](#font-smoothing)
+	* [Font smoothing](#font-smoothing)
 	* [Caution: OptimizeLegibility](#caution-optimizelegibility)
 * [Resources](#resources)
 * [Even more](#even-more)
 	* [Uploading our font files to Github](#uploading-our-font-files-to-github)
 	* [Loading web fonts](#loading-web-fonts)
-	* [Base64](#base64-encoded-font-files)
+	* [Base64 encoding](#base64-encoded-font-files)
 	* [CSS Text Decoration](#css-text-decoration)
 * [Comments? Feedback?](#comments-feedback)
 	* [Future additions](#future-additions)
@@ -56,8 +56,8 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
   font-family: FontName;
   src: url('path/filename.eot');
   src: url('path/filename?#iefix') format('embedded-opentype'),
-      url('path/filename.woff2') format('woff2'), 
-      url('path/filename.woff') format('woff'),
+       url('path/filename.woff2') format('woff2'), 
+       url('path/filename.woff') format('woff'),
        url('path/filename.ttf')  format('truetype');
 }
 ~~~~
@@ -66,8 +66,8 @@ We do not offer SVG font files anymore, as the user-base for them is extremely s
 ~~~~css
 @font-face {
   font-family: FontName;
-  src:	url('path/filename.woff2') format('woff2'), 
-			url('path/filename.woff') format('woff');
+  src: url('path/filename.woff2') format('woff2'), 
+       url('path/filename.woff') format('woff');
 }
 ~~~~
 
@@ -99,8 +99,8 @@ It’s very easy! Here’s how you can activate it across all browsers that supp
 
 ~~~~css
 p {
-font-feature-settings:"kern" 1;
-font-kerning: normal;
+  font-feature-settings:"kern" 1;
+  font-kerning: normal;
 }
 ~~~~
 
@@ -108,12 +108,12 @@ If you don’t use something like SASS or PostCSS that helps you with this, you 
 
 ~~~~css
 p {
--moz-font-feature-settings:"kern" 1; 
--ms-font-feature-settings:"kern" 1; 
--o-font-feature-settings:"kern" 1; 
--webkit-font-feature-settings:"kern" 1; 
-font-feature-settings:"kern" 1;
-font-kerning: normal;
+  -moz-font-feature-settings:"kern" 1; 
+  -ms-font-feature-settings:"kern" 1; 
+  -o-font-feature-settings:"kern" 1; 
+  -webkit-font-feature-settings:"kern" 1; 
+  font-feature-settings:"kern" 1;
+  font-kerning: normal;
 }
 ~~~~
 
@@ -124,7 +124,7 @@ In the previous paragraphs we’ve looked at the font-feature-settings attribute
 The following code would turn on old-style numerals (onum) that are proportional numerals (pnum), turn on kerning, and also activate Stylistic Set 1 (ss01):
 
 ~~~~css
-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
+  font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 ~~~~
 
 ![Image to explain features](assets/features-explainer.gif)
@@ -146,8 +146,8 @@ It’s best to use both attributes with _em_ units, as that will automatically b
 
 ~~~~css
 p {
-	letter-spacing: 0.015em;
-	word-spacing: 0.001em;
+  letter-spacing: 0.015em;
+  word-spacing: 0.001em;
 }
 ~~~~
 
@@ -175,8 +175,8 @@ Browsers on Apple computers offer some additional control over the font renderin
 
 ~~~~css
 p {
-	-webkit-font-smoothing: antialiased; /* Chrome, Safari */
-	-moz-osx-font-smoothing: grayscale; /* Firefox */
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
 }
 ~~~~
 
@@ -192,7 +192,7 @@ We often come across this attribute when troubleshooting our customers’ font u
 
 ~~~~css
 p {
-	text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 ~~~~
 
