@@ -1,17 +1,10 @@
 # Using (Grilli Type) web fonts
 
-**This document is a work in progress, an initial draft, and not ready for public consumption. If you’re here it’s because I sent you a link for feedback. Please do not share this further. Thank you!**
+**This document is a continuing work in progress, please let us know if anything is unclear – or if you think anything is wrong. Thank you!**
 
-Luckily it is really easy to use custom fonts in websites nowadays. The basics are easy to master, and this document hopes to help with that. 
+Luckily it’s now really easy to use custom fonts in websites. The basics are easy to master, and this document hopes to help with that. 
 
-It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the loading of the font files.
-
-## Still to be added
-
-* CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
-* When to use -webkit-font-smoothing: subpixel-antialiased, rendering in different browsers / devices & CSS anti-aliasing (and why not to use text-rendering property)
-* Basic info on hinting
-
+It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the specific loading of the font files.
 
 ## Table of contents
 
@@ -21,17 +14,21 @@ It also links to further, more in-depth sources that are helpful for more advanc
 	* [CSS for modern formats](#css-for-modern-formats)  
 	* [HTML embed code](#html-embed-code)
 	* [Hosting your fonts](#hosting-your-fonts)
-* [Advanced Typographic Features](#advanced-typographic-features)
+* [Advanced typographic features](#advanced-typographic-features)
 	* [Spacing and kerning](#spacing-and-kerning)
 	* [Advanced OpenType features](#advanced-opentype-features)
   * [Letter-spacing and word-spacing](#letter-spacing-and-word-spacing)
+* [Font rendering](#font-rendering)
+	* [Hinting](#font-hinting)
+	* [Font Smoothing](#font-smoothing)
+	* [Caution: OptimizeLegibility](#caution-optimizelegibility)
 * [Resources](#resources)
 * [Even more](#even-more)
 	* [Uploading our font files to Github](#uploading-our-font-files-to-github)
 	* [Loading web fonts](#loading-web-fonts)
 	* [CSS Text Decoration](#css-text-decoration)
-* [Comments? Additions? Feedback?](#comments-additions-feedback)
-
+* [Comments? Feedback?](#comments-additions-feedback)
+	* [Future additions](#future-additions)
 
 ## Web font formats:
 
@@ -155,6 +152,54 @@ p {
 
 ![Image to explain letter-spacing and word-spacing](assets/letterspacing-explainer.gif)
 
+## Font rendering
+
+Using type on screens brings up important questions about their rendering. Fonts are usually designed on a 1000 unit grid – or an even finer one – and then you display them at something like a 16 pixel size. In an interplay between device, screen, and software, this reduction in fidelity requires some smarts.
+
+### Hinting
+
+Each operating system does things a little differently. On Apple computers, the smarts are in the operating system (and thus can evolve), while the fonts themselves can be dumb.
+
+Historically, on Windows, the smarts were supposed to be included in the font software, and the system heavily used those smarts to decide how a font should be rendered at 12 pixels height or such.
+
+This is called hinting. Hinting information embedded in the font files can tell a computer that in an H, the two stems are supposed to be the same width, or that the space above and below the crossbar should be equal at small sizes.
+
+Hinting is very complex and very complicated, but the important takeaway here is that the same font at the same size might render very differently even on the same computer if you switch any factor: the display, the browser, or even just the type and background’s color.
+
+At Grilli Type we auto-hint and quality test our fonts for use on Windows computers. On Mac, on your phone or tablet, and in general on devices with a high display resolution, hinting becomes a lot less important or is even completely ignored. 
+
+### Font Smoothing
+
+Browsers on Apple computers offer some additional control over the font rendering.
+
+~~~~css
+p {
+	-webkit-font-smoothing: antialiased; /* Chrome, Safari */
+	-moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+~~~~
+
+Using this leads to sharper, thinner text rendering on MacOS and iOS. But beware: this can lead to rendering problems, for example if you use a thin weight already.
+
+It is mainly useful to balance the rendering of fonts in these browsers when using light text on dark backgrounds, as they would otherwise get rendered quite a bit bolder. 
+
+This is not going to become a standard CSS feature. Only use this if you know what you’re doing.
+
+### Caution: OptimizeLegibility
+
+We often come across this attribute when troubleshooting our customers’ font use on websites:
+
+~~~~css
+p {
+	text-rendering: optimizeLegibility;
+}
+~~~~
+
+Although there are some use cases for this, you should probably not use this attribute at all.
+
+Among other things, it activates kerning. That was very useful at some point, but is not needed anymore (as shown above). In addition to kerning, it also activates all kinds of ligatures, including extravagant ones that may be present in the font files.
+
+Simply: do not use this feature if you don’t know exactly what you’re doing with it.
 
 ## Resources
 
@@ -189,6 +234,10 @@ In some rare instances, encoding your fonts as base64 inside your CSS will be a 
 The W3C is working on [a draft for new controls of text decoration](https://drafts.csswg.org/css-text-decor-3/), mainly dealing with how to make underlining text better and easier in CSS. This is not yet usable, but have a look!
 
 
-## Comments? Additions? Feedback?
+## Comments? Feedback?
 
 You can always [email us](mailto:mail@grillitype.com?subject=Web%20Fonts%20Guide) with feedback to this document. You can also write us directly on [Github](https://github.com/grillitype/web-fonts-guide) by adding an issue.
+
+### Future additions
+
+* CSS font-weight & font-style: when to put it into @font-face definition and when not, pros / cons.
