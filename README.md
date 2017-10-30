@@ -19,15 +19,16 @@ It also links to further, more in-depth sources that are helpful for more advanc
 	* [Advanced OpenType features](#advanced-opentype-features)
   * [Letter-spacing and word-spacing](#letter-spacing-and-word-spacing)
 * [Font rendering](#font-rendering)
-	* [Hinting](#font-hinting)
+	* [Hinting](#hinting)
 	* [Font Smoothing](#font-smoothing)
 	* [Caution: OptimizeLegibility](#caution-optimizelegibility)
 * [Resources](#resources)
 * [Even more](#even-more)
 	* [Uploading our font files to Github](#uploading-our-font-files-to-github)
 	* [Loading web fonts](#loading-web-fonts)
+	* [Base64](#base64-encoded-font-files)
 	* [CSS Text Decoration](#css-text-decoration)
-* [Comments? Feedback?](#comments-additions-feedback)
+* [Comments? Feedback?](#comments-feedback)
 	* [Future additions](#future-additions)
 
 ## Web font formats:
