@@ -1,10 +1,10 @@
 # Using (Grilli Type) web fonts
 
-**This document is a continuing work in progress, please let us know if anything is unclear – or if you think anything is wrong. Thank you!**
-
 Luckily it’s now really easy to use custom fonts in websites. The basics are easy to master, and this document hopes to help with that. 
 
 It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the specific loading of the font files.
+
+**This document is a continuing work in progress, please let us know if anything is unclear – or if you think anything is wrong. Thank you!**
 
 ## Table of contents
 
@@ -204,6 +204,7 @@ Simply: do not use this feature if you don’t know exactly what you’re doing 
 ## Resources
 
 * [Clagnut’s OpenType CSS Sandbox](http://clagnut.com/sandbox/css3/) by Richard Rutter is great place to test out OpenType features and easily put together your required CSS code.
+* [Webfont Handbook](https://abookapart.com/products/webfont-handbook) by Bram Stein is the most in-depth (e)book you can possibly read on web fonts, their rendering, and their performance.
 * [Copy Paste Character](http://copypastecharacter.com) is a great website that allows you to access pretty much any special character you might ever use.
 * [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/) has a good list of different browser version’s support for various web font format setups.
 
@@ -232,7 +233,6 @@ In some rare instances, encoding your fonts as base64 inside your CSS will be a 
 ### CSS Text Decoration
 
 The W3C is working on [a draft for new controls of text decoration](https://drafts.csswg.org/css-text-decor-3/), mainly dealing with how to make underlining text better and easier in CSS. This is not yet usable, but have a look!
-
 
 ## Comments? Feedback?
 
