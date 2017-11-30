@@ -1,8 +1,8 @@
 # Using (Grilli Type) web fonts
 
-Luckily it’s now really easy to use custom fonts in websites. The basics are easy to master, and this document hopes to help with that. 
+Luckily it’s now really easy to use custom fonts in websites. The basics are easy to master, and this document hopes to help with that. It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the specific loading of the font files.
 
-It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the specific loading of the font files.
+If you don’t know us, make sure to [have a look at our fonts](https://grillitype.com)
 
 **This document is a continuing work in progress, please let us know if anything is unclear – or if you think anything is wrong. Thank you!**
 
