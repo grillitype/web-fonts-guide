@@ -1,5 +1,7 @@
 # Using (Grilli Type) web fonts
 
+**Please note that the most up-to-date version of this guide is currently on Grilli Type’s blog: https://www.grillitype.com/blog/guides/using-grilli-type-web-fonts-guide. We will aim to update this version here at some point, as well.**
+
 Luckily it’s now really easy to use custom fonts in websites. The basics are easy to master, and this document hopes to help with that. It also links to further, more in-depth sources that are helpful for more advanced developers aiming to perfect aspects like the specific loading of the font files.
 
 If you don’t know us, make sure to [have a look at the fonts](https://grillitype.com) on our website.
